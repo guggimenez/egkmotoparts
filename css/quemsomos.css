@@ -1,0 +1,21 @@
+main {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    width: 100%;
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+}
+
+.texto{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}

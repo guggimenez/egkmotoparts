@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Manetes</title>
+    <link rel="stylesheet" href="../css/conf-css.css">
+    <link rel="stylesheet" href="../css/p.css">
+
+    <script src="https://kit.fontawesome.com/99451e1fb0.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../imgs/logo.png" alt="logo da empresa">
+        </div>
+
+        <div class="espaco-mobile">
+
+        </div>
+
+        <div class="menu-pc">
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div>
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div>
+                <a href="quemsomos.html">Quem Somos</a>
+            </div>
+            <div>
+                <a href="apoio.html">Materiais de Apoio</a>
+            </div>
+            <div>
+                <a href="contato.html">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="burguer">
+            <div class="botao-menu" onclick="alternarMenu()"><img src="../imgs/hamburguer.webp" alt=""></div>
+        </div>
+    </header>
+
+    <div id="menu-lateral" class="menu-lateral">
+        <div class="conteudo-menu">
+            <div class="cabecalho-menu">
+                <h2>Menu</h2>
+                <button class="botao-fechar" onclick="alternarMenu()">✕</button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="apoio.html">Materiais de Apoio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="espaco-header">
+
+    </div>
+
+    <main>
+        <div class="titulo">
+            <h1>Mini Manetes</h1>
+        </div>
+
+        <div class="seletor">
+            <div class="miniaturas">
+                <div>
+                    <img src="../imgs/mini1.jpg" onclick="selecionarImagem(this, '../imgs/mini1.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/mini2.jpg" onclick="selecionarImagem(this, '../imgs/mini2.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/mini3.jpg" onclick="selecionarImagem(this, '../imgs/mini3.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/mini4.jpg" onclick="selecionarImagem(this, '../imgs/mini4.jpg');">
+                </div>
+            </div>
+            <div class="ampliado">
+                <div>
+                    <img src="../imgs/mini1.jpg" id="grandona">
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-funciona">
+            <p>Os mini manetes da EGK Motoparts são a escolha ideal para quem busca estilo e performance. Feitos com
+                liga de alumínio de alta qualidade, garantem durabilidade e conforto na pilotagem. Com design compacto e
+                ergonômico, esses manetes proporcionam maior controle e estilo, com acabamentos em preto e cromado para
+                personalizar ainda mais a moto.</p>
+        </div>
+
+        <div class="titulo">
+            <h1>Modelos</h1>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Aplicação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10.11.0537</td>
+                    <td>Mini manete freio Honda Titan150 KS KSE CG FAN Cargo125 Job150 direito preto</td>
+                </tr>
+                <tr>
+                    <td>10.11.0921</td>
+                    <td>Mini manete freio Honda Titan150 KS KSE CG FAN Cargo125 Job150 direito cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0927</td>
+                    <td>Mini manete freio Honda NX 150/200/350 XLX350 Bros150 XR200 XRE300 Falcon Tornado direito preto
+                    </td>
+                </tr>
+                <tr>
+                    <td>10.11.0926</td>
+                    <td>Mini manete freio Honda NX 150/200/350 XLX350 Bros150 XR200 XRE300 Falcon Tornado direito
+                        cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0956</td>
+                    <td>Mini manete freio Honda Bros150 freio cromado (lona)</td>
+                </tr>
+                <tr>
+                    <td>10.11.0957</td>
+                    <td>Mini manete freio Honda NX 150/200/350 XLX350 Bros150 XR200 XRE300 Falcon Tornado direito a
+                        disco cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0539</td>
+                    <td>Mini manete freio Honda Twister CBX200 Titan ES Titan150KSED CB300R direito preto</td>
+                </tr>
+                <tr>
+                    <td>10.11.0922</td>
+                    <td>Mini manete freio Honda Twister CBX200 Titan ES Titan150KSED CB300R direito cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0973</td>
+                    <td>Mini manete freio Yamaha YBR Fazer (lona) direito cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0972</td>
+                    <td>Mini manete freio Yamaha YBR Fazer XTZ125/250 Lander a partir 2009 Tenere250 (disco) direito
+                        cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0975</td>
+                    <td>Mini manete freio Yamaha YBR Factor (disco) cromado direito</td>
+                </tr>
+                <tr>
+                    <td>10.11.0976</td>
+                    <td>Mini manete freio Yamaha YBR Factor (lona) direito cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0974</td>
+                    <td>Mini manete freio Suzuki YES09 Katana Intruder direito cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0538</td>
+                    <td>Mini manete embreagem Honda Titan150 KS KSE CG FAN Cargo125 Job150 esquerdo preto</td>
+                </tr>
+                <tr>
+                    <td>10.11.0923</td>
+                    <td>Mini manete embreagem Honda Titan150 KS KSE CG FAN Cargo125 Job150 esquerdo cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0955</td>
+                    <td>Mini manete embreagem Honda Bros 150/Falcon esquerdo cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0928</td>
+                    <td>Mini manete embreagem Honda Tornado/Falcon esquerdo preto</td>
+                </tr>
+                <tr>
+                    <td>10.11.0540</td>
+                    <td>Mini manete embreagem Honda Twister Tornado XLR125 XL125/150 Strada Titan150 KSED CBX200 CB300R
+                        Esq. preto</td>
+                </tr>
+                <tr>
+                    <td>10.11.0924</td>
+                    <td>Mini manete embreagem Honda Twister Tornado XLR125 XL125/150 Strada Titan150 KSED CBX200 CB300R
+                        Esq. cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0977</td>
+                    <td>Mini manete embreagem Yamaha YBR Fazer XTZ 125/150 esquerdo cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0979</td>
+                    <td>Mini manete embreagem Yamaha YBR Factor esquerdo cromado</td>
+                </tr>
+                <tr>
+                    <td>10.11.0978</td>
+                    <td>Mini manete embreagem Suzuki YES09 esquerdo cromado</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-cima">
+
+            <div class="logo-footer">
+
+                <img src="../imgs/logo.png" alt="Logo EGK">
+
+                <div class="icones">
+                    <a href="https://www.instagram.com/2gegk/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511991195236&text&type=phone_number&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/egk.motoparts?mibextid=JRoKGi">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@egkmotoparts8974">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sac.html">SAC</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-footer">
+                <p style="color: #1b3c5d;">São Paulo</p>
+                <p>
+                    <a href="https://api.whatsapp.com/send/?phone=5511991195236&text&type=phone_number&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    +55 11 99119-5236
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                    +55 11 2021-2491
+                </p>
+
+            </div>
+        </div>
+        <div class="footer-rodape">
+            <p class="motoparts">© 2024 EGK Motoparts. Todos os direitos preservados.</p>
+            <p class="gustavo">Desenvolvido por GGG</p>
+        </div>
+    </footer>
+
+    <script src="../home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+main {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    width: 100%;
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+}
+
+.videos{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+iframe{
+    width: 45%;
+    aspect-ratio: 1.777777777777/1;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    iframe{
+        width: 100%;
+        
+    }
+}

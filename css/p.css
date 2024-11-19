@@ -1,0 +1,139 @@
+main {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    width: 100%;
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+}
+
+.seletor{
+    width: 55%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 120px;
+}
+
+.miniaturas{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.miniaturas div {
+    height: 22%;
+    aspect-ratio: 1/1;   
+    border-radius: 20px;
+    border: solid #c0c0c0 1px;
+}
+
+.miniaturas div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.ampliado{
+    aspect-ratio: 1/1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ampliado div{
+    width: 95%;
+    height: 95%;
+    border: solid #c0c0c0 1px;
+    border-radius: 20px;
+}
+
+.ampliado div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.texto-funciona{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 600px;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+th {
+    background-color: #215ACC;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    main{
+        width: 90%;
+    }
+
+    .titulo{
+        font-size: 2rem;
+    }
+
+    .seletor{
+        width: 100%;
+        height: 350px;
+        flex-direction: column-reverse;
+        position: static;
+    }
+
+    .miniaturas{
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+    }
+
+    .miniaturas div{
+        width: 22%;
+        height: 100%;
+    }
+
+    .ampliado{
+        width: 80%;
+        height: 80%;
+    }
+
+    .texto-funciona{
+        width: 95%;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}

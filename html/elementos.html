@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Ar</title>
+    <link rel="stylesheet" href="../css/conf-css.css">
+    <link rel="stylesheet" href="../css/p.css">
+
+    <script src="https://kit.fontawesome.com/99451e1fb0.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../imgs/logo.png" alt="logo da empresa">
+        </div>
+
+        <div class="espaco-mobile">
+
+        </div>
+
+        <div class="menu-pc">
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div>
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div>
+                <a href="quemsomos.html">Quem Somos</a>
+            </div>
+            <div>
+                <a href="apoio.html">Materiais de Apoio</a>
+            </div>
+            <div>
+                <a href="contato.html">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="burguer">
+            <div class="botao-menu" onclick="alternarMenu()"><img src="../imgs/hamburguer.webp" alt=""></div>
+        </div>
+    </header>
+
+    <div id="menu-lateral" class="menu-lateral">
+        <div class="conteudo-menu">
+            <div class="cabecalho-menu">
+                <h2>Menu</h2>
+                <button class="botao-fechar" onclick="alternarMenu()">✕</button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="apoio.html">Materiais de Apoio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="espaco-header">
+
+    </div>
+
+    <main>
+        <div class="titulo">
+            <h1>Elementos de Ar</h1>
+        </div>
+
+        <div class="seletor">
+            <div class="miniaturas">
+                <div>
+                    <img src="../imgs/elemento1.jpg" onclick="selecionarImagem(this, '../imgs/elemento1.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/elemento2.jpg" onclick="selecionarImagem(this, '../imgs/elemento2.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/elemento3.jpg" onclick="selecionarImagem(this, '../imgs/elemento3.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/elemento4.jpg" onclick="selecionarImagem(this, '../imgs/elemento4.jpg');">
+                </div>
+            </div>
+            <div class="ampliado">
+                <div>
+                    <img src="../imgs/elemento1.jpg" id="grandona">
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-funciona">
+            <p>Os elementos de ar da EGK Motoparts são projetados para proporcionar a melhor filtragem, garantindo um
+                fluxo de ar eficiente e protegendo o motor contra impurezas. Fabricados com espuma de alta qualidade,
+                nossos elementos oferecem durabilidade superior e alta capacidade de retenção de sujeiras.</p>
+        </div>
+
+        <div class="titulo">
+            <h1>Modelos</h1>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Aplicação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10.11.1033</td>
+                    <td>Espuma C 100 DREAM</td>
+                </tr>
+                <tr>
+                    <td>10.11.1034</td>
+                    <td>Espuma C 100 BIZ</td>
+                </tr>
+                <tr>
+                    <td>10.11.1169</td>
+                    <td>Espuma POP100</td>
+                </tr>
+                <tr>
+                    <td>10.11.1122</td>
+                    <td>Espuma Forrada BIZ100 2013 a 2015</td>
+                </tr>
+                <tr>
+                    <td>10.11.1039</td>
+                    <td>Espuma BIZ125+ / KS / ES (ANO 2007)</td>
+                </tr>
+                <tr>
+                    <td>10.11.1118</td>
+                    <td>Espuma BIZ 125 2011 a 2015</td>
+                </tr>
+                <tr>
+                    <td>10.11.1119</td>
+                    <td>Espuma CG TITAN FAN 125/150 2014/2015</td>
+                </tr>
+                <tr>
+                    <td>10.11.1021</td>
+                    <td>Espuma - Externo CG 125 ANO 82</td>
+                </tr>
+                <tr>
+                    <td>10.11.1022</td>
+                    <td>Espuma - Interno CG 125 ANO 82</td>
+                </tr>
+                <tr>
+                    <td>10.11.1023</td>
+                    <td>Espuma Forrada CG 125 ANO 83</td>
+                </tr>
+                <tr>
+                    <td>10.11.1035</td>
+                    <td>Espuma NXR 125/150 BROSS</td>
+                </tr>
+                <tr>
+                    <td>10.11.1024</td>
+                    <td>Espuma XLR 125</td>
+                </tr>
+                <tr>
+                    <td>10.11.1025</td>
+                    <td>Espuma XLX CARB. DUP 84/86</td>
+                </tr>
+                <tr>
+                    <td>10.11.1026</td>
+                    <td>Espuma XLX 250/350</td>
+                </tr>
+                <tr>
+                    <td>10.11.1027</td>
+                    <td>Espuma CBX 150 / STRADA</td>
+                </tr>
+                <tr>
+                    <td>10.11.1028</td>
+                    <td>Espuma NX 150</td>
+                </tr>
+                <tr>
+                    <td>10.11.1029</td>
+                    <td>Espuma NX 200</td>
+                </tr>
+                <tr>
+                    <td>10.11.1030</td>
+                    <td>Espuma Forrada XR 200</td>
+                </tr>
+                <tr>
+                    <td>10.11.1038</td>
+                    <td>Espuma Forrada Refil FAN / TITAN 2000</td>
+                </tr>
+                <tr>
+                    <td>10.11.1031</td>
+                    <td>Espuma Forrada FAN / TITAN 2000</td>
+                </tr>
+                <tr>
+                    <td>10.11.1036</td>
+                    <td>Espuma Forrada CG 150 2005</td>
+                </tr>
+                <tr>
+                    <td>10.11.1032</td>
+                    <td>Espuma TWISTER</td>
+                </tr>
+                <tr>
+                    <td>10.11.1126</td>
+                    <td>Espuma Forrada TORNADO</td>
+                </tr>
+                <tr>
+                    <td>10.11.1078</td>
+                    <td>Espuma Forrada CB 300</td>
+                </tr>
+                <tr>
+                    <td>10.11.1170</td>
+                    <td>Espuma Forrada 3 pçs XRE 300</td>
+                </tr>
+                <tr>
+                    <td>10.11.1037</td>
+                    <td>Espuma 1 pç NX 350 SAHARA</td>
+                </tr>
+                <tr>
+                    <td>10.11.1168</td>
+                    <td>Espuma Forrada FALCON 400</td>
+                </tr>
+                <tr>
+                    <td>10.11.1123</td>
+                    <td>Espuma NEO 115 2007</td>
+                </tr>
+                <tr>
+                    <td>10.11.1046</td>
+                    <td>Espuma YBR 125 MOD. ORIG</td>
+                </tr>
+                <tr>
+                    <td>10.11.1047</td>
+                    <td>Espuma YBR 125</td>
+                </tr>
+                <tr>
+                    <td>10.11.1051</td>
+                    <td>Espuma lisa XTZ 125 MOD. ORIG</td>
+                </tr>
+                <tr>
+                    <td>10.11.1048</td>
+                    <td>Espuma Forrada Cone RD 125 / 135 RDZ</td>
+                </tr>
+                <tr>
+                    <td>10.11.1120</td>
+                    <td>Espuma Forrada FAZER 150 2014</td>
+                </tr>
+                <tr>
+                    <td>10.11.1042</td>
+                    <td>Espuma Forrada DT 180 ANTIGA</td>
+                </tr>
+                <tr>
+                    <td>10.11.1045</td>
+                    <td>Espuma DT180 TDR 91 EM dian</td>
+                </tr>
+                <tr>
+                    <td>10.11.1041</td>
+                    <td>Espuma DT 180 92 / 96</td>
+                </tr>
+                <tr>
+                    <td>10.11.1043</td>
+                    <td>Espuma DT 200</td>
+                </tr>
+                <tr>
+                    <td>10.11.1040</td>
+                    <td>Espuma Forrada CRYPTON</td>
+                </tr>
+                <tr>
+                    <td>10.11.1049</td>
+                    <td>Espuma Forrada TDM 225</td>
+                </tr>
+                <tr>
+                    <td>10.11.1050</td>
+                    <td>Espuma Forrada XT 225</td>
+                </tr>
+                <tr>
+                    <td>10.11.1127</td>
+                    <td>Espuma XTZ 250 LANDER</td>
+                </tr>
+                <tr>
+                    <td>10.11.1077</td>
+                    <td>Espuma Forrada YS250 - FAZER</td>
+                </tr>
+                <tr>
+                    <td>10.11.1125</td>
+                    <td>Espuma Forrada VIRAGO XV250</td>
+                </tr>
+                <tr>
+                    <td>10.11.1124</td>
+                    <td>Espuma Forrada RD 350 LC</td>
+                </tr>
+                <tr>
+                    <td>10.11.1052</td>
+                    <td>Espuma KATANA 125 EM 125 ES INTR 250</td>
+                </tr>
+                <tr>
+                    <td>10.11.1053</td>
+                    <td>Espuma BURGMAN 125</td>
+                </tr>
+                <tr>
+                    <td>10.11.1058</td>
+                    <td>Espuma ZIG 100 ANO 2009</td>
+                </tr>
+                <tr>
+                    <td>10.11.1055</td>
+                    <td>Espuma SPEED 150</td>
+                </tr>
+                <tr>
+                    <td>10.11.1056</td>
+                    <td>Espuma LAZER 150</td>
+                </tr>
+                <tr>
+                    <td>10.11.1057</td>
+                    <td>Espuma KANSAS 250</td>
+                </tr>
+                <tr>
+                    <td>10.11.1121</td>
+                    <td>Espuma STX 200</td>
+                </tr>
+                <tr>
+                    <td>10.11.1183</td>
+                    <td>Espuma CRF 230</td>
+                </tr>
+                <tr>
+                    <td>10.11.2227</td>
+                    <td>Espuma CRF250F 2019 / 2022</td>
+                </tr>
+                <tr>
+                    <td>10.11.1044</td>
+                    <td>Espuma DTN / DTZ / DT 85 / 90</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-cima">
+
+            <div class="logo-footer">
+
+                <img src="../imgs/logo.png" alt="Logo EGK">
+
+                <div class="icones">
+                    <a href="https://www.instagram.com/2gegk/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511991195236&text&type=phone_number&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/egk.motoparts?mibextid=JRoKGi">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@egkmotoparts8974">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sac.html">SAC</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-footer">
+                <p style="color: #1b3c5d;">São Paulo</p>
+                <p>
+                    <a href="https://api.whatsapp.com/send/?phone=5511991195236&text&type=phone_number&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    +55 11 99119-5236
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                    +55 11 2021-2491
+                </p>
+
+            </div>
+        </div>
+        <div class="footer-rodape">
+            <p class="motoparts">© 2024 EGK Motoparts. Todos os direitos preservados.</p>
+            <p class="gustavo">Desenvolvido por GGG</p>
+        </div>
+    </footer>
+
+    <script src="../home.js"></script>
+</body>
+
+</html>

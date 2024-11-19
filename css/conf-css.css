@@ -1,0 +1,337 @@
+* {
+    margin: 0 auto;
+}
+
+
+.ingles {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.ingles a {
+    padding: 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+    background-image: url('../imgs/uk.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #215ACC;
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.burguer,
+.espaco-mobile {
+    display: none;
+}
+
+
+.menu-pc{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.menu-pc div a{
+    color: white;
+    text-decoration: none;
+    font-family: anton;
+    font-size: 30px;
+}
+
+.menu-pc div a:hover{
+    color: #ededed;
+
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 99999999;
+}
+
+.menu-lateral.ativo {
+    transform: translateX(0);
+}
+
+.conteudo-menu {
+    padding: 20px;
+}
+
+/* Cabeçalho do menu lateral */
+.cabecalho-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cabecalho-menu h2 {
+    margin: 0;
+    width: 85%;
+}
+
+.botao-fechar {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.conteudo-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.conteudo-menu li {
+    margin: 15px 0;
+}
+
+.conteudo-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.conteudo-menu a:hover {
+    color: #c0c0c0;
+}
+
+
+
+
+
+.espaco-header{
+    width: 100%;
+    height: 120px;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #dbe7ff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-cima {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 225px;
+    flex-direction: row;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+.logo-footer img {
+    width: 150px;
+}
+
+.icones {
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.icones a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #689acb;
+}
+
+.links-footer {
+    width: 25%;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.links-footer ul {
+    list-style-type: none;
+}
+
+.links-footer ul li {
+    margin-bottom: 10px;
+}
+
+.links-footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.links-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.contato-footer {
+    width: 25%;
+}
+
+.contato-footer p {
+    margin-bottom: 10px;
+    color: #689acb;
+    font-weight: bold;
+}
+
+.contato-footer a {
+    color: #689acb;
+    font-weight: bold;
+}
+
+.footer-rodape {
+    width: 100%;
+    max-width: 1000px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-between;
+    border-top: 1px solid rgba(128, 128, 128, 0.276);
+}
+
+.footer-rodape p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .ingles a{
+        font-size: 10px;
+    }
+
+    header {
+        width: 100%;
+        height: 65px;
+        display: flex;
+    }
+
+    .espaco-mobile{
+        display: block;
+        width: 40%;
+    }
+
+    .logo,
+    .burguer {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 70%;
+        height: 80%;
+    }
+
+    .burguer img{
+        width: 50%;
+        height: 30%;
+    }
+
+    .menu-pc{
+        display: none;
+    }
+
+
+
+    .espaco-header{
+        height: 65px;
+    }
+
+
+
+
+
+    footer {
+        width: 142.86%;
+        height: auto;
+        transform: scale(0.7);
+        transform-origin: left;
+    }
+
+    .footer-cima {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo-footer,
+    .links-footer,
+    .contato-footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo-footer img {
+        width: 120px;
+    }
+
+    .icones {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .links-footer ul {
+        padding: 0;
+    }
+
+    .footer-rodape {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-rodape p {
+        margin: 5px 0;
+    }
+
+}

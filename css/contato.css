@@ -1,0 +1,92 @@
+main {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    width: 100%;
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+}
+
+.linha{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.forma-contato{
+    width: 47%;
+    height: 115px;
+    border-radius: 15px;
+    transition: all 0.5s;
+    display: flex;
+    background-color: #dbe7ff;
+    text-decoration: none;
+}
+
+.linha a{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.152);
+}
+
+.icone{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: rgba(0, 3, 41, 0.808);
+}
+
+.meio{
+    width: 60%;
+
+}
+
+.meio h1{
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+    margin-top: 13px;
+}
+
+.meio p{
+    color: #333;
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    main{
+        width: 90%;
+    }
+
+    .linha{
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .forma-contato{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icone{
+        font-size: 22px;
+    }
+
+    .meio h1{
+        font-size: 22px;
+    }
+
+    .meio p{
+        font-size: 15px;
+    }
+}

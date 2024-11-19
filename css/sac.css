@@ -1,0 +1,137 @@
+main {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    width: 100%;
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+}
+
+.principal{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.texto{
+    width: 50%;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.texto h1{
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+    text-align: left;
+}
+
+.barras{
+    width: 50%;
+}
+
+.linha{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.forma-contato{
+    width: 100%;
+    height: 115px;
+    border-radius: 15px;
+    transition: all 0.5s;
+    display: flex;
+    background-color: #dbe7ff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.linha a{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.152);
+}
+
+.icone{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: rgba(0, 3, 41, 0.808);
+}
+
+.meio{
+    width: 60%;
+
+}
+
+.meio h1{
+    font-family: anton;
+    color: rgba(0, 3, 41, 0.808);
+    font-size: 2rem;
+    margin-top: 13px;
+}
+
+.meio p{
+    color: #333;
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    main{
+        width: 100%;
+    }
+
+    .titulo{
+        width: 90%;
+    }
+
+    .principal{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .texto{
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .texto h1{
+        font-size: 1.5rem;
+    }
+
+    .barras{
+        width: 100%;
+    }
+    
+    .linha{
+        flex-direction: column;
+    }
+
+    .forma-contato{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .icone{
+        font-size: 22px;
+    }
+
+    .meio h1{
+        font-size: 22px;
+    }
+
+    .meio p{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,36 @@
+*{
+    margin:0 auto;
+}
+
+.tabelas{
+    flex-direction: column;
+}
+
+table{
+    border: solid black 2px;
+    width: 700px;
+    height: 120px;
+    font-family: arial;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: solid black 1px;
+    background-color: white;
+    text-align: center;
+    width: 10%;
+}
+
+th{
+    background-color:  rgba(255, 239, 9, 0.466);
+}
+
+
+
+/* Configurações para celular */
+@media screen and (max-width: 480px) {
+    table{
+        width: 80%;
+    }
+
+}

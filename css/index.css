@@ -1,0 +1,110 @@
+main {
+    width: 100%;
+    height: auto;
+}
+
+.meu-carrossel {
+    width: 100%;
+    border-bottom: solid 3px #333;
+}
+
+.carousel-item img {
+    aspect-ratio: 3/1;
+}
+
+
+.produtos-linha {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 275px;
+    flex-direction: row;
+}
+
+.produto {
+    background-color: #dbe7ff;
+    border-radius: 15px;
+    color: #001642;
+    transition: all 0.5s;
+}
+
+.produto h1 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.produto:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.152);
+}
+
+.trava,
+.manetes {
+    width: 65%;
+    height: 90.91%;
+}
+
+.corrente,
+.filtros,
+.pedaleiras,
+.coroas,
+.mais {
+    width: 30%;
+    height: 90.91%;
+}
+
+.mais {
+    background-color: #1e58ca;
+}
+
+.produto h1 {
+    width: 100%;
+    height: 100%;
+}
+
+.produto a {
+    color: #001642;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.produto a h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.mais a {
+    color: white
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    main {
+        height: auto;
+    }
+
+    .produtos-linha {
+        width: 90%;
+        height: 150px;
+    }
+
+    .meio {
+        display: none;
+    }
+
+    .produto {
+        width: 47%;
+        height: 140px;
+        font-size: 10px;
+        box-sizing: border-box;
+    }
+
+    .produto h1 {
+        font-size: 23px;
+    }
+}

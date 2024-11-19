@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarnições Metálicas</title>
+    <link rel="stylesheet" href="../css/conf-css.css">
+    <link rel="stylesheet" href="../css/p.css">
+
+    <script src="https://kit.fontawesome.com/99451e1fb0.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../imgs/logo.png" alt="logo da empresa">
+        </div>
+
+        <div class="espaco-mobile">
+
+        </div>
+
+        <div class="menu-pc">
+            <div>
+                <a href="index.html">Home</a>
+            </div>
+            <div>
+                <a href="produtos.html">Produtos</a>
+            </div>
+            <div>
+                <a href="quemsomos.html">Quem Somos</a>
+            </div>
+            <div>
+                <a href="apoio.html">Materiais de Apoio</a>
+            </div>
+            <div>
+                <a href="contato.html">Contato</a>
+            </div>
+
+        </div>
+
+        <div class="burguer">
+            <div class="botao-menu" onclick="alternarMenu()"><img src="../imgs/hamburguer.webp" alt=""></div>
+        </div>
+    </header>
+
+    <div id="menu-lateral" class="menu-lateral">
+        <div class="conteudo-menu">
+            <div class="cabecalho-menu">
+                <h2>Menu</h2>
+                <button class="botao-fechar" onclick="alternarMenu()">✕</button>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="apoio.html">Materiais de Apoio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="espaco-header">
+
+    </div>
+
+    <main>
+        <div class="titulo">
+            <h1>Guarnições Metálicas</h1>
+        </div>
+
+        <div class="seletor">
+            <div class="miniaturas">
+                <div>
+                    <img src="../imgs/guarnicao1.jpg" onclick="selecionarImagem(this, '../imgs/guarnicao1.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/guarnicao2.jpg" onclick="selecionarImagem(this, '../imgs/guarnicao2.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/guarnicao3.jpg" onclick="selecionarImagem(this, '../imgs/guarnicao3.jpg');">
+                </div>
+                <div>
+                    <img src="../imgs/guarnicao4.jpg" onclick="selecionarImagem(this, '../imgs/guarnicao4.jpg');">
+                </div>
+            </div>
+            <div class="ampliado">
+                <div>
+                    <img src="../imgs/guarnicao1.jpg" id="grandona">
+                </div>
+            </div>
+        </div>
+
+        <div class="texto-funciona">
+            <p>As guarnições metálicas da EGK Motoparts são projetadas para proporcionar vedação eficiente e
+                durabilidade excepcional. Fabricadas com materiais de alta resistência, nossas guarnições suportam altas
+                temperaturas e pressões, garantindo a proteção ideal para o motor e outros componentes. Com encaixe
+                preciso e qualidade superior.</p>
+        </div>
+
+        <div class="titulo">
+            <h1>Modelos</h1>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Aplicação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10.11.1059</td>
+                    <td>Ponteira escapamento Honda XLS 125</td>
+                </tr>
+                <tr>
+                    <td>10.11.1066</td>
+                    <td>Ponteira escapamento Honda XLR 125</td>
+                </tr>
+                <tr>
+                    <td>10.11.1060</td>
+                    <td>Ponteira escapamento Honda NX150</td>
+                </tr>
+                <tr>
+                    <td>10.11.1061</td>
+                    <td>Ponteira escapamento Honda NX 200</td>
+                </tr>
+                <tr>
+                    <td>10.11.1062</td>
+                    <td>Ponteira escapamento Honda NXR 125 Bros</td>
+                </tr>
+                <tr>
+                    <td>10.11.1063</td>
+                    <td>Ponteira escapamento Honda NXR 150 Bros 2008</td>
+                </tr>
+                <tr>
+                    <td>10.11.1064</td>
+                    <td>Ponteira escapamento Honda NXR 150 Bros 2009</td>
+                </tr>
+                <tr>
+                    <td>10.11.1065</td>
+                    <td>Ponteira escapamento Honda XR 200</td>
+                </tr>
+                <tr>
+                    <td>10.11.1067</td>
+                    <td>Ponteira escapamento Honda XLR250 Ano 84 Virago Menor XT 660</td>
+                </tr>
+                <tr>
+                    <td>10.11.1071</td>
+                    <td>Ponteira escapamento Honda XR250 Tornado</td>
+                </tr>
+                <tr>
+                    <td>10.11.1068</td>
+                    <td>Ponteira escapamento Honda XLX250 / 350</td>
+                </tr>
+                <tr>
+                    <td>10.11.1072</td>
+                    <td>Ponteira escapamento Honda CB 300</td>
+                </tr>
+                <tr>
+                    <td>10.11.1073</td>
+                    <td>Ponteira escapamento Honda XRE 300</td>
+                </tr>
+                <tr>
+                    <td>10.11.1069</td>
+                    <td>Ponteira escapamento Honda NX350 Sahara</td>
+                </tr>
+                <tr>
+                    <td>10.11.1070</td>
+                    <td>Ponteira escapamento Honda NX400 Falcon</td>
+                </tr>
+                <tr>
+                    <td>10.11.1129</td>
+                    <td>Ponteira escapamento Honda CBR450SR</td>
+                </tr>
+                <tr>
+                    <td>10.11.1166</td>
+                    <td>Ponteira escapamento Honda CB500 / CBR600</td>
+                </tr>
+                <tr>
+                    <td>10.11.1167</td>
+                    <td>Ponteira escapamento Honda CB600 CB400 / 450 Traseira Suzuki 650</td>
+                </tr>
+                <tr>
+                    <td>10.11.1075</td>
+                    <td>Ponteira escapamento Yamaha XTZ250 Lander</td>
+                </tr>
+                <tr>
+                    <td>10.11.1074</td>
+                    <td>Ponteira escapamento Yamaha Super Ténéré</td>
+                </tr>
+                <tr>
+                    <td>10.11.1128</td>
+                    <td>Ponteira escapamento Yamaha XT600 XTZ600 Virago1000 Drag Star1100</td>
+                </tr>
+                <tr>
+                    <td>10.11.1076</td>
+                    <td>Ponteira escapamento Suzuki Intruder 250</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-cima">
+
+            <div class="logo-footer">
+
+                <img src="../imgs/logo.png" alt="Logo EGK">
+
+                <div class="icones">
+                    <a href="https://www.instagram.com/2gegk/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=5511991195236&text&type=phone_number&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/egk.motoparts?mibextid=JRoKGi">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@egkmotoparts8974">
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="links-footer">
+                <ul>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="sac.html">SAC</a></li>
+                </ul>
+            </div>
+
+            <div class="contato-footer">
+                <p style="color: #1b3c5d;">São Paulo</p>
+                <p>
+                    <a href="https://api.whatsapp.com/send/?phone=5511991195236&text&type=phone_number&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                    +55 11 99119-5236
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                    +55 11 2021-2491
+                </p>
+
+            </div>
+        </div>
+        <div class="footer-rodape">
+            <p class="motoparts">© 2024 EGK Motoparts. Todos os direitos preservados.</p>
+            <p class="gustavo">Desenvolvido por GGG</p>
+        </div>
+    </footer>
+
+    <script src="../home.js"></script>
+</body>
+
+</html>
